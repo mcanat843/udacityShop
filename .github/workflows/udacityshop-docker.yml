@@ -7,7 +7,7 @@ on:
       - 'master'
 
 jobs:
-  Push_to_Docker_Hub:
+  Push_Images_to_Docker_Hub:
 
     runs-on: ubuntu-latest
 
