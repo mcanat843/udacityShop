@@ -1,4 +1,4 @@
-name: Uda'CityShop latest - Package with Docker
+name: Uda'CityShop [latest tag] - Package with Docker
 
 on:
   push:
