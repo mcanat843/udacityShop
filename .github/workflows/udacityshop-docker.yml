@@ -1,10 +1,10 @@
 name: Uda'CityShop [latest tag] - Package with Docker
 
-on:
-  push:
-    branches:
-      - 'main'
-      - 'master'
+#on:
+#  push:
+#    branches:
+#      - 'main'
+#      - 'master'
 
 jobs:
   Push_Images_to_Docker_Hub:

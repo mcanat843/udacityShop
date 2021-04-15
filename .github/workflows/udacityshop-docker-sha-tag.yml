@@ -3,8 +3,8 @@ name: Uda'CityShop [sha tag] - Package with Docker
 on:
   push:
     branches:
-      #- 'main'
-      #- 'master'
+      - 'main'
+      - 'master'
 
 jobs:
   Push_Images_to_Docker_Hub:
