@@ -1,4 +1,4 @@
-name: Uda'CityShop sha-${GITHUB_SHA::8} - Package with Docker
+name: Uda'CityShop sha-${{GITHUB_SHA::8}} - Package with Docker
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
           file: src/frontend/Dockerfile
           context: src/frontend
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frontend:sha-${GITHUB_SHA::8}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frontend:sha-${{GITHUB_SHA::8}}
 
       - name: Build and Push Product Catalog Service to DockerHub
         uses: docker/build-push-action@v2
@@ -33,7 +33,7 @@ jobs:
           file: src/productcatalogservice/Dockerfile
           context: src/productcatalogservice
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/productcatalogservice:sha-${GITHUB_SHA::8}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/productcatalogservice:sha-${{GITHUB_SHA::8}}
 
       - name: Build and Push Currency Service to DockerHub
         uses: docker/build-push-action@v2
@@ -41,7 +41,7 @@ jobs:
           file: src/currencyservice/Dockerfile
           context: src/currencyservice
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/currencyservice:sha-${GITHUB_SHA::8}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/currencyservice:sha-${{GITHUB_SHA::8}}
 
       - name: Build and Push Ad Service to DockerHub
         uses: docker/build-push-action@v2
@@ -49,4 +49,4 @@ jobs:
           file: src/adservice/Dockerfile
           context: src/adservice
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/adservice:sha-${GITHUB_SHA::8}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/adservice:sha-${{GITHUB_SHA::8}}
