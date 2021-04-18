@@ -16,7 +16,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: mert436/productcatalogservice:latest
+        image: mert436/productcatalogservice:sha-575e9bd
         ports:
         - containerPort: 3550
         env:
