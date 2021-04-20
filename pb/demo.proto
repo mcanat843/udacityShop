@@ -92,7 +92,7 @@ message CurrencyConversionRequest {
     string to_code = 2;
 }
 
-/**
+
 // ------------Ad service------------------
 service AdService {
     rpc GetAds(AdRequest) returns (AdResponse) {}
@@ -114,8 +114,8 @@ message Ad {
     // short advertisement text to display.
     string text = 2;
 }
-**/
 
+/**
 // ------------Ad service V2------------------
 service AdServiceV2 {
     rpc GetAds(AdRequest) returns (AdResponse) {}
@@ -133,3 +133,4 @@ message AdResponse {
     // short link text to display in the Ad link.
     string text = 2;
 }
+**/
