@@ -127,8 +127,12 @@ message AdRequest {
 }
 
 message AdResponse {
-    // Product info.
-    string product_id = 1;
+    repeated Ad ads = 1;
+}
+
+message Ad {
+    // Id of a random product.
+    string id = 1;
 
     // short link text to display in the Ad link.
     string text = 2;

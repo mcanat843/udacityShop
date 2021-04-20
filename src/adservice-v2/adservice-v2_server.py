@@ -55,7 +55,7 @@ if __name__ == "__main__":
             id = AdServiceV2.GetRandomProductId
 
             product_info = {
-                "product_id" : id,
+                "id" : id,
                 "text" : "AdV2 - Items with 25% discount!"
             }
             return demo_pb2.AdResponse(product_info)
