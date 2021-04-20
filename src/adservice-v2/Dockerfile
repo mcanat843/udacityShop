@@ -11,7 +11,7 @@ RUN GRPC_HEALTH_PROBE_VERSION=v0.3.6 && \
     chmod +x /bin/grpc_health_probe
 
 # TODO: Place Dockerfile instructions below
- 
+WORKDIR /app
 COPY . .
 EXPOSE 9556
 RUN pip install -r requirements.txt

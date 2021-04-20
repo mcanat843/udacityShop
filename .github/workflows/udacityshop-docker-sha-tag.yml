@@ -45,7 +45,7 @@ jobs:
         uses: crazy-max/ghaction-docker-meta@v2
         with:
           images: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/adservice-v2
+            ${{ secrets.DOCKERHUB_USERNAME }}/adservice_v2
           tags: |
             type=sha
 
