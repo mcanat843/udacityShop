@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: udacityshop-prod
+  namespace: argocd
+
+spec:
+  source:
+    path: kubernetes-manifests/prod
+    repoURL: https://github.com/mcanat843/udacityShop.git
+    targetRevision: HEAD
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+
+  syncPolicy:
+    manual:
+    
